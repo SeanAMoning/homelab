@@ -355,7 +355,7 @@ export default function HomeLabGuide() {
               return (
                 <div key={pi} style={{ marginBottom:8 }}>
                   <button onClick={()=>setExpandedPhase(isOpen?null:pi)} style={{ width:"100%",background:isOpen?"#0a1a14":"#080e0b",border:`1px solid ${isOpen?phase.color+"44":"#0f2018"}`,borderLeft:`3px solid ${done===total&&total>0?"#00ff9d":phase.color}`,borderRadius:isOpen?"4px 4px 0 0":"4px",padding:"13px 14px",cursor:"pointer",display:"flex",justifyContent:"space-between",alignItems:"center",textAlign:"left",transition:"all .2s" }}>
-                    <div style={{ display:"flex",alignItems:"center",gap:12,flex:1,flexWrap:"wrap",gap:10 }}>
+                    <div style={{ display:"flex",alignItems:"center",gap:10,flex:1,flexWrap:"wrap" }}>
                       <span style={{ fontSize:10,color:phase.color,letterSpacing:".12em",background:phase.color+"15",padding:"2px 8px",borderRadius:2,whiteSpace:"nowrap" }}>{phase.week}</span>
                       <span style={{ fontFamily:"'Rajdhani',sans-serif",fontSize:16,color:"#ddeeff",fontWeight:700 }}>{phase.phase}</span>
                       <span style={{ fontSize:9,color:"#4a6a5a",background:"#0a1410",border:"1px solid #0f2018",padding:"2px 7px",borderRadius:2 }}>{phase.examRef}</span>
